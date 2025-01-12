@@ -4,14 +4,14 @@ body{
     background-color: #f0f0f0;
 }
 
-#section_nav { /* Section de los menus navegables */
-  display: flex; /* Convierte el contenedor en un contenedor flex */
-  justify-content: center; /* Centra los elementos horizontalmente */
+#section_nav { 
+  display: flex; 
+  justify-content: center; 
   font-size: 20px;
   font-style: italic;
   a{text-decoration: none;color: coral;
     padding: 10px 20px;
-    background-color: coral; /* Verde */
+    background-color: coral; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -78,25 +78,29 @@ body{
 }
 
 #footer {
-    /* Estilos generales del footer */
     display: flex;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: flex;
-    padding-top: 60px;
-    justify-content: center;
-    font-size: 45px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    a{text-decoration: none;color: coral; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s
-    ease;
-    box-sizing: border-box;
-    }}
+    flex-direction: row;
+    background-color: #f2f2f2; 
+    padding: 10px;
+    padding-top: 150px;
+    text-align: center; 
+  }
   
+  footer a {
+    color: #333;
+    text-decoration: none;
+    margin:  10px;
+  }
+  
+  footer img {
+    width: 25px; 
+    height: 25px;
+  }
+  
+  .copyright {
+    font-size: 25px;
+    color: #888;
+  }
 
 #logo_imagen {
     display: block;
@@ -293,5 +297,28 @@ body{
 
 }}
 
+                            /* Estilos contacto */
+
+#form_contacto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    h2{padding-top: 30px;
+    }}
+
+
+
+.h2_contacto {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+#body_contacto {
+    padding-top: 70px;
+    h6{font-size: 40px; color: lightcoral; padding-left: 45%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    a{font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    background-color: lightskyblue;   
+}
 
                                     

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body>
+<body id="body_contacto">
 
     <header id="header_principal">
         <h1 id="titulos">Contacto</h1>
@@ -29,40 +29,33 @@
                 </ul>
             </nav>
         </section>
+        <section>
+            <form id="form_contacto" action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer id="footer">
+        <a href="./pages/contacto.html">Contacto</a>
+        <p>Síguenos en:</p>
+        <a href="https://www.instagram.com/tu_usuario_de_instagram/" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/tu_pagina_de_facebook/" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <p class="copyright">© Todos los derechos reservados. Psicoyoga 2024.</p>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img id="logo_footer" src="./img/imagen_yoga.jpg" alt="Logo de tu academia">
-                    <p>Descripción breve de la academia.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Contáctanos</h3>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i> Juan Paullier 2294, esq Coquimbo
-                    </p>
-                    <p>
-                        <i class="fas fa-phone-alt"></i> +598 99 453 326
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope"></i> psicoyogaacademia@gmail.com
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Síguenos</h3>
-                    <a href="https://www.instagram.com/tu_usuario_de_instagram/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="copyright">© Todos los derechos reservados. Psicoyoga 2024.</p>
-                </div>
-            </div>
-        </div>
+
 
     </footer>
 
