@@ -1,324 +1,2346 @@
-                                                                /* INDEX */
+/* Aplicación media query */
 
-body{
-    background-color: #f0f0f0;
+@media(min-width:2560px) {
+    body {
+        background-color: #f0f0f0;
+    }
+
+    #section_nav {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+    }
+
+    .boton:hover {
+        background-color: #3e8e41;
+        /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    #titulos {
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        text-align: center;
+        flex: 1;
+        /* Permite que el espacio ocupe el espacio restante*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: lightcoral;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #enlaces_del_index {
+        /* Section de los menus navegables */
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 26px;
+        margin-top: 30px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    #header_principal {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+
+    }
+
+    #imagen_logo {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin-left: 20px;
+        border-radius: 80px;
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #f2f2f2;
+        padding: 10px;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .copyright {
+        font-size: 25px;
+        color: #888;
+    }
+
+    #logo_imagen {
+        display: block;
+        margin-top: 30px auto;
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+    }
+
+    #tabla_horarios {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    #tabla_aranceles {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+
+    .yoga_niveles {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+
+    }
+
+    .img_enlaces {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+
+    }
+
+    .subtitulo_contenido {
+        font-weight: 200px;
+        font-size: xx-large;
+        padding-top: 30px;
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .yoga_estilos {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .ol_img_contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+    }
+
+    .li_text_img {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 60px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    /* QUIENES SOMOS */
+
+    .sect_nav_quienes {
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 20px;
+        font-style: italic;
+        padding-top: 60px;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+
+    .subtitulos_quienes {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .li_profesores {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 40px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    .a_sub_title {
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-size: 30px;
+        font-style: normal;
+        color: white;
+        background-color: lightcoral;
+    }
+
+    .imagen_espacio {
+        display: flex;
+        width: 35%;
+        height: 35%;
+        padding-left: 30%;
+        padding-top: 30px;
+    }
+
+    .art_esp_claridad {
+        font-style: italic;
+        font-size: 30px;
+        background-color: lightcoral;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    #footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        background-color: lightskyblue;
+        color: lightcoral;
+        display: flex;
+        align-items: flex-start;
+
+
+
+    }
+
+    #sect_li_prof {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* Estilos sección actividades */
+    .actividades_body {
+        display: block;
+        background-color: lightskyblue;
+
+    }
+
+    .contenido_actividades {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+    }
+
+    /* Estilos contacto */
+
+    #form_contacto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+
+        h2 {
+            padding-top: 30px;
+        }
+    }
+
+
+
+    .h2_contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    #body_contacto {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        background-color: lightskyblue;
+    }
 }
 
-#section_nav { 
-  display: flex; 
-  justify-content: center; 
-  font-size: 20px;
-  font-style: italic;
-  a{text-decoration: none;color: coral;
-    padding: 10px 20px;
-    background-color: coral; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s
-   ease;
-   
-  }}
-  
-.boton:hover {
-    background-color: #3e8e41;
-   /* Verde más oscuro al pasar el ratón */
+/* Aplicación de media querys para 1440px */
+
+@media (min-width: 1440px) {
+    body {
+        background-color: #f0f0f0;
+    }
+
+    #section_nav {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+    }
+
+    .boton:hover {
+        background-color: #3e8e41;
+        /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    #titulos {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+        flex: 1;
+        /* Permite que el espacio ocupe el espacio restante*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: lightcoral;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #enlaces_del_index {
+        /* Section de los menus navegables */
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 26px;
+        margin-top: 30px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    #header_principal {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+
+    }
+
+    #imagen_logo {
+        width: 125px;
+        height: 125px;
+        object-fit: cover;
+        margin-left: 20px;
+        border-radius: 80px;
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #f2f2f2;
+        padding: 10px;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .copyright {
+        font-size: 25px;
+        color: #888;
+    }
+
+    #logo_imagen {
+        display: block;
+        margin-top: 30px auto;
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+    }
+
+    #tabla_horarios {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    #tabla_aranceles {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+
+    .yoga_niveles {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+
+    }
+
+    .img_enlaces {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+
+    }
+
+    .subtitulo_contenido {
+        font-weight: 200px;
+        font-size: xx-large;
+        padding-top: 30px;
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .yoga_estilos {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .ol_img_contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+    }
+
+    .li_text_img {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 60px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    /* QUIENES SOMOS */
+
+    .sect_nav_quienes {
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 20px;
+        font-style: italic;
+        padding-top: 60px;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+
+    .subtitulos_quienes {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .li_profesores {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 40px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    .a_sub_title {
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-size: 30px;
+        font-style: normal;
+        color: white;
+        background-color: lightcoral;
+    }
+
+    .imagen_espacio {
+        display: flex;
+        width: 35%;
+        height: 35%;
+        padding-left: 30%;
+        padding-top: 30px;
+    }
+
+    .art_esp_claridad {
+        font-style: italic;
+        font-size: 30px;
+        background-color: lightcoral;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    #footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        background-color: lightskyblue;
+        color: lightcoral;
+        display: flex;
+        align-items: flex-start;
+
+
+
+    }
+
+    #sect_li_prof {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* Estilos sección actividades */
+    .actividades_body {
+        display: block;
+        background-color: lightskyblue;
+
+    }
+
+    .contenido_actividades {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+    }
+
+    /* Estilos contacto */
+
+    #form_contacto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+
+        h2 {
+            padding-top: 30px;
+        }
+    }
+
+
+
+    .h2_contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    #body_contacto {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        background-color: lightskyblue;
+    }
 }
 
+/* Media querys para tableta 768px */
 
-#titulos {
-    display: flex; 
-    justify-content: center;
-    font-size: 60px;
-    text-align: center;
-    flex: 1; /* Permite que el espacio ocupe el espacio restante*/ 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: lightcoral;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media (min-width: 768px) {
+    body {
+        background-color: #f0f0f0;
+    }
+
+    #section_nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 15px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 15px;
+            background-color: coral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+    }
+
+    .boton:hover {
+        background-color: #3e8e41;
+        /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    #titulos {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+        flex: 1;
+        /* Permite que el espacio ocupe el espacio restante*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: lightcoral;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #enlaces_del_index {
+        /* Section de los menus navegables */
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 26px;
+        margin-top: 30px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    #header_principal {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+
+    }
+
+    #imagen_logo {
+        width: 125px;
+        height: 125px;
+        object-fit: cover;
+        margin-left: 20px;
+        border-radius: 80px;
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #f2f2f2;
+        padding: 10px;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .copyright {
+        font-size: 25px;
+        color: #888;
+    }
+
+    #logo_imagen {
+        display: block;
+        margin-top: 30px auto;
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+    }
+
+    #tabla_horarios {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    #tabla_aranceles {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+
+    .yoga_niveles {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+
+    }
+
+    .img_enlaces {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+
+    }
+
+    .subtitulo_contenido {
+        font-weight: 200px;
+        font-size: xx-large;
+        padding-top: 30px;
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .yoga_estilos {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .ol_img_contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+    }
+
+    .li_text_img {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 60px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    /* QUIENES SOMOS */
+
+    .sect_nav_quienes {
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 15px;
+        font-style: italic;
+        padding-top: 60px;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 15px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+
+    .subtitulos_quienes {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .li_profesores {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 18px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+    .a_sub_title {
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-size: 30px;
+        font-style: normal;
+        color: white;
+        background-color: lightcoral;
+    }
+
+    .imagen_espacio {
+        display: flex;
+        width: 35%;
+        height: 35%;
+        padding-left: 30%;
+        padding-top: 30px;
+    }
+
+    .art_esp_claridad {
+        font-style: italic;
+        font-size: 30px;
+        background-color: lightcoral;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    #footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        background-color: lightskyblue;
+        color: lightcoral;
+        display: flex;
+        align-items: flex-start;
+
+
+
+    }
+
+    #sect_li_prof {
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    /* Estilos sección actividades */
+    .actividades_body {
+        display: block;
+        background-color: lightskyblue;
+
+    }
+
+    .contenido_actividades {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+    }
+
+    /* Estilos contacto */
+
+    #form_contacto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+
+        h2 {
+            padding-top: 30px;
+        }
+    }
+
+
+
+    .h2_contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    #body_contacto {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        background-color: lightskyblue;
+
+        nav,
+        a {
+            font-size: 15px;
+        }
+    }
 }
 
-#enlaces_del_index {
-    /* Section de los menus navegables */
-  display: flex; /* Convierte el contenedor en un contenedor flex */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  font-size: 26px;
-  margin-top: 30px;
-  font-style: italic;
-  a{text-decoration: none;}
-  
+/* Media query para 425px */
 
+@media(min-width:425px) {
+
+    body {
+        background-color: #f0f0f0;
+    }
+
+    #section_nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 8px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 5px 10px;
+            background-color: coral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+    }
+
+    .boton:hover {
+        background-color: #3e8e41;
+        /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    #titulos {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        flex: 1;
+        /* Permite que el espacio ocupe el espacio restante*/
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        color: lightcoral;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #enlaces_del_index {
+        /* Section de los menus navegables */
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 26px;
+        margin-top: 30px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    #header_principal {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+
+    }
+
+    #imagen_logo {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-left: 20px;
+        border-radius: 80px;
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #f2f2f2;
+        padding: 10px;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    footer img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        color: #888;
+    }
+
+    #logo_imagen {
+        display: block;
+        margin-top: 30px auto;
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+    }
+
+    #tabla_horarios {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    #tabla_aranceles {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+
+    .yoga_niveles {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+        font-size: 25px;
+
+    }
+
+    .img_enlaces {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+
+    }
+
+    .subtitulo_contenido {
+        font-weight: 150px;
+        padding-top: 30px;
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .yoga_estilos {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .ol_img_contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+    }
+
+    .li_text_img {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 60px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    /* QUIENES SOMOS */
+
+    .sect_nav_quienes {
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 10px;
+        font-style: italic;
+        padding-top: 60px;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 5px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+
+    .subtitulos_quienes {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .li_profesores {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 13px;
+        font-style: italic;
+
+        img {
+            height: 80px;
+            width: 80px;
+
+            a {
+                text-decoration: none;
+                color: coral;
+                padding: 10px 20px;
+                background-color: coral;
+                /* Verde */
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                box-sizing: border-box;
+
+            }
+        }
+    }
+
+    .a_sub_title {
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-size: 30px;
+        font-style: normal;
+        color: white;
+        background-color: lightcoral;
+    }
+
+    .imagen_espacio {
+        display: flex;
+        width: 35%;
+        height: 35%;
+        padding-left: 30%;
+        padding-top: 30px;
+    }
+
+    .art_esp_claridad {
+        font-style: italic;
+        font-size: 30px;
+        background-color: lightcoral;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    #footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        background-color: lightskyblue;
+        color: lightcoral;
+        display: flex;
+        align-items: flex-start;
+
+
+
+    }
+
+    #sect_li_prof {
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    /* Estilos sección actividades */
+    .actividades_body {
+        display: block;
+        background-color: lightskyblue;
+
+    }
+
+    .contenido_actividades {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+    }
+
+    /* Estilos contacto */
+
+    #form_contacto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+
+        h2 {
+            padding-top: 30px;
+        }
+    }
+
+
+
+    .h2_contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    #body_contacto {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        background-color: lightskyblue;
+
+        nav,
+        a {
+            font-size: 8px;
+        }
+    }
 }
 
-#header_principal {
-    position: relative;
-    display: flex;
-    align-items: center ;
-    height: 150px; 
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    h1{text-align: center;}
-    
+/* Media query para 375px */
+
+@media(min-width:375px) {
+
+    body {
+        background-color: #f0f0f0;
+    }
+
+    #section_nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 6px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 5px 10px;
+            background-color: coral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+    }
+
+    .boton:hover {
+        background-color: #3e8e41;
+        /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    #titulos {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        flex: 1;
+        /* Permite que el espacio ocupe el espacio restante*/
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        color: lightcoral;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #enlaces_del_index {
+        /* Section de los menus navegables */
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 26px;
+        margin-top: 30px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    #header_principal {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+
+    }
+
+    #imagen_logo {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-left: 20px;
+        border-radius: 80px;
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #f2f2f2;
+        padding: 10px;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    footer img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        color: #888;
+    }
+
+    #logo_imagen {
+        display: block;
+        margin-top: 30px auto;
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+    }
+
+    #tabla_horarios {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    #tabla_aranceles {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+
+    .yoga_niveles {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+        font-size: 25px;
+
+    }
+
+    .img_enlaces {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+
+    }
+
+    .subtitulo_contenido {
+        font-weight: 150px;
+        padding-top: 30px;
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .yoga_estilos {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .ol_img_contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+    }
+
+    .li_text_img {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 60px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    /* QUIENES SOMOS */
+
+    .sect_nav_quienes {
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 8px;
+        font-style: italic;
+        padding-top: 60px;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 5px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+
+    .subtitulos_quienes {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .li_profesores {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 13px;
+        font-style: italic;
+
+        img {
+            height: 80px;
+            width: 80px;
+
+            a {
+                text-decoration: none;
+                color: coral;
+                padding: 10px 20px;
+                background-color: coral;
+                /* Verde */
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                box-sizing: border-box;
+
+            }
+        }
+    }
+
+    .a_sub_title {
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-size: 30px;
+        font-style: normal;
+        color: white;
+        background-color: lightcoral;
+    }
+
+    .imagen_espacio {
+        display: flex;
+        width: 35%;
+        height: 35%;
+        padding-left: 30%;
+        padding-top: 30px;
+    }
+
+    .art_esp_claridad {
+        font-style: italic;
+        font-size: 30px;
+        background-color: lightcoral;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    #footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        background-color: lightskyblue;
+        color: lightcoral;
+        display: flex;
+        align-items: flex-start;
+
+
+
+    }
+
+    #sect_li_prof {
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    /* Estilos sección actividades */
+    .actividades_body {
+        display: block;
+        background-color: lightskyblue;
+
+    }
+
+    .contenido_actividades {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+    }
+
+    /* Estilos contacto */
+
+    #form_contacto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+
+        h2 {
+            padding-top: 30px;
+        }
+    }
+
+
+
+    .h2_contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    #body_contacto {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        background-color: lightskyblue;
+
+        nav,
+        a {
+            font-size: 6px;
+        }
+    }
 }
 
-#imagen_logo {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin-left: 20px;
-    border-radius: 80px;
-    margin-top: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Media query para 320px */
+
+@media(min-width:320px) {
+
+    body {
+        background-color: #f0f0f0;
+    }
+
+    #section_nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 4px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 5px 10px;
+            background-color: coral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+    }
+
+    .boton:hover {
+        background-color: #3e8e41;
+        /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    #titulos {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        flex: 1;
+        /* Permite que el espacio ocupe el espacio restante*/
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        color: lightcoral;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #enlaces_del_index {
+        /* Section de los menus navegables */
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 15px;
+        margin-top: 30px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    #header_principal {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+
+    }
+
+    #imagen_logo {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-left: 20px;
+        border-radius: 80px;
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #f2f2f2;
+        padding: 10px;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    footer img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        color: #888;
+    }
+
+    #logo_imagen {
+        display: block;
+        margin-top: 30px auto;
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+    }
+
+    #tabla_horarios {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        font-size: 8px;
+        height: 40px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    #tabla_aranceles {
+        padding: auto;
+        margin-top: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+
+    .yoga_niveles {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+        font-size: 25px;
+
+    }
+
+    .img_enlaces {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+
+    }
+
+    .subtitulo_contenido {
+        font-weight: 150px;
+        padding-top: 30px;
+        display: flex;
+        padding-left: 120px;
+    }
+
+    .yoga_estilos {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .ol_img_contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 60px;
+    }
+
+    .li_text_img {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 60px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 20px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+    }
+
+    /* QUIENES SOMOS */
+
+    .sect_nav_quienes {
+        display: flex;
+        /* Convierte el contenedor en un contenedor flex */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        font-size: 10px;
+        font-style: italic;
+        padding-top: 60px;
+
+        a {
+            text-decoration: none;
+            color: coral;
+            padding: 10px 5px;
+            background-color: coral;
+            /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+
+    .subtitulos_quienes {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .li_profesores {
+        display: flex;
+        padding-top: 60px;
+        justify-content: center;
+        font-size: 13px;
+        font-style: italic;
+
+        img {
+            height: 80px;
+            width: 80px;
+
+            a {
+                text-decoration: none;
+                color: coral;
+                padding: 10px 20px;
+                background-color: coral;
+                /* Verde */
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                box-sizing: border-box;
+
+            }
+        }
+    }
+
+    .a_sub_title {
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-size: 30px;
+        font-style: normal;
+        color: white;
+        background-color: lightcoral;
+    }
+
+    .imagen_espacio {
+        display: flex;
+        width: 35%;
+        height: 35%;
+        padding-left: 30%;
+        padding-top: 30px;
+    }
+
+    .art_esp_claridad {
+        font-style: italic;
+        font-size: 30px;
+        background-color: lightcoral;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    #footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        background-color: lightskyblue;
+        color: lightcoral;
+        display: flex;
+        align-items: flex-start;
+
+
+
+    }
+
+    #sect_li_prof {
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    /* Estilos sección actividades */
+    .actividades_body {
+        display: block;
+        background-color: lightskyblue;
+
+    }
+
+    .contenido_actividades {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+    }
+
+    /* Estilos contacto */
+
+    #form_contacto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+
+        h2 {
+            padding-top: 30px;
+        }
+    }
+
+
+
+    .h2_contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    #body_contacto {
+        padding-top: 70px;
+
+        h6 {
+            font-size: 40px;
+            color: lightcoral;
+            padding-left: 45%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            font-size: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        background-color: lightskyblue;
+
+        nav,
+        a {
+            font-size: 4px;
+        }
+    }
 }
-
-#footer {
-    display: flex;
-    flex-direction: row;
-    background-color: #f2f2f2; 
-    padding: 10px;
-    padding-top: 150px;
-    text-align: center; 
-  }
-  
-  footer a {
-    color: #333;
-    text-decoration: none;
-    margin:  10px;
-  }
-  
-  footer img {
-    width: 25px; 
-    height: 25px;
-  }
-  
-  .copyright {
-    font-size: 25px;
-    color: #888;
-  }
-
-#logo_imagen {
-    display: block;
-    margin-top:30px auto;
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-}
-
-#tabla_horarios {
-    padding: auto;
-    margin-top: 120px;
-    position: relative;
-    display:inline-block;   
-    align-items: center ;
-    height: 150px; 
-    margin-top: 60px;
-    justify-content: center;
-    align-items: center;
-    h1{text-align: center;}
-}
-
-#tabla_aranceles {
-    padding: auto;
-    margin-top: 120px;
-    position: relative;
-    display: flex;
-    align-items: center ;
-    height: 150px; 
-    margin-top: 60px;
-    justify-content: center;
-    align-items: center;
-    h3{text-align: center;}
-
-}
-
-.yoga_niveles {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 60px;
-    
-}
-
-.img_enlaces {
-    display: flex;
-    justify-content: center;
-    height: 150px; 
-    
-}
-
-.subtitulo_contenido {
-    font-weight: 200px;
-    font-size: xx-large;
-    padding-top: 30px;
-    display: flex;
-    padding-left: 120px;
-}
-
-.yoga_estilos {
-    padding-top: 60px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    
-}
-
-.ol_img_contenido {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 60px;
-}
-
-.li_text_img {
-    display: flex;
-    padding-top: 60px;
-    justify-content: center;
-    font-size: 60px;
-    font-style: italic;
-  a{text-decoration: none;color: coral;
-    padding: 10px 20px;
-    background-color: coral; /* Verde */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s
-   ease;
-   box-sizing: border-box;
-}}
-
-                                                /* QUIENES SOMOS */
-
-.sect_nav_quienes {
-  display: flex; /* Convierte el contenedor en un contenedor flex */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  font-size: 20px;
-  font-style: italic;
-  padding-top: 60px;
-    a{text-decoration: none;color: coral;
-    padding: 10px 20px;
-    background-color: coral; /* Verde */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s
-   ease;
-}}
-
-
-.subtitulos_quienes {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    padding-top: 30px;
-}
-
-.li_profesores {
-    display: flex;
-    padding-top: 60px;
-    justify-content: center;
-    font-size: 40px;
-    font-style: italic;
-  a{text-decoration: none;color: coral;
-    padding: 10px 20px;
-    background-color: coral; /* Verde */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s
-   ease;
-   box-sizing: border-box;
-}}
-
-.a_sub_title {
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-    font-size: 30px;
-    font-style:normal;
-    color: white;
-    background-color: lightcoral;
-}
-
-.imagen_espacio {
-    display: flex;
-    width: 35%;
-    height: 35%;
-    padding-left: 30%;
-    padding-top: 30px;
-}
-
-.art_esp_claridad {
-    font-style: italic;
-    font-size: 30px;
-    background-color: lightcoral;
-    color: white;
-    padding-left: 10%;
-    padding-right: 10%;
-
-}
-
-#footer {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    background-color: lightskyblue;
-    color: lightcoral;
-    display: flex;
-    align-items:flex-start;
-
-
-    
-}
-
-#sect_li_prof {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-                                    /* Estilos sección actividades */
-.actividades_body {
-    display:block;
-    background-color:lightskyblue;
-    
-}
-
-.contenido_actividades {
-    padding-top: 70px;
-        h6{font-size: 40px; color: lightcoral; padding-left: 45%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-        a{font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-
-
-}}
-
-                            /* Estilos contacto */
-
-#form_contacto {
-    display: flex;
-    flex-direction: column;
-    padding-top: 120px;
-    h2{padding-top: 30px;
-    }}
-
-
-
-.h2_contacto {
-    display: flex;
-    justify-content: center;
-    padding-top: 150px;
-}
-
-#body_contacto {
-    padding-top: 70px;
-    h6{font-size: 40px; color: lightcoral; padding-left: 45%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-    a{font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-    background-color: lightskyblue;   
-}
-
-                                    
